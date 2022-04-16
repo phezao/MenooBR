@@ -1,5 +1,5 @@
 <template>
-  <button class="bg-indigo-600 text-white w-24
+  <button class="bg-indigo-600 text-white w-full
     rounded-md shadow px-5 py-3 text-base font-medium leading-6
     border border-transparent
     transition duration-150 ease-in-out hover:bg-indigo-500 focus:outline-none"

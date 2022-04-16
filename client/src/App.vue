@@ -1,27 +1,40 @@
 <script>
 import { defineComponent } from '@vue/runtime-core'
 import { RouterView } from 'vue-router'
+import PageWrapper from './components/PageWrapper.vue';
 
 export default defineComponent({
   components: {
-    RouterView
+    RouterView,
+    PageWrapper
   }
-})
+});
 
 </script>
 
 <template>
-  <div>
-    <header class="bg-white shadow">
-      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <h1
-          class="text-3xl font-bold leading-tight text-gray-900"
-        >
-        </h1>
-      </div>
-    </header>
+  <page-wrapper>
     <main>
       <router-view />
     </main>
-  </div>
+  </page-wrapper>
 </template>
+
+<style lang="postcss">
+
+  html, body, #app{
+    height: 100%;
+  }
+
+  .btn {
+    @apply focus:outline-none w-full rounded-md px-5 py-3 text-base font-medium leading-6 transition duration-150 ease-in-out;
+  }
+
+  .btn-indigo {
+    @apply bg-indigo-600 shadow text-white border border-transparent hover:bg-indigo-500;
+  }
+
+  .btn-ghost{
+   @apply text-indigo-600;
+  }
+</style>

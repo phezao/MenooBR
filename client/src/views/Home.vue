@@ -9,14 +9,14 @@ export default {
     ButtonRepo,
     BaseInput,
     BaseButton,
-    BaseSelect
+    BaseSelect,
   }
 }
 
 </script>
 
 <template>
-  <div class="">
+  <div>
     <div
       class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8"
     >

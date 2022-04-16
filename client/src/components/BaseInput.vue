@@ -1,6 +1,6 @@
 <template>
-  <div class="relative">
-  <input :placeholder = "label" class="h-14 w-64 peer
+  <div class="relative w-72">
+  <input :placeholder = "label" class="h-14 w-full peer
       placeholder-transparent bg-gray-100 border-none
       rounded-lg focus:ring-2 focus:ring-blue-500"
       :type="type"
