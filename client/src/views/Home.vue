@@ -8,6 +8,32 @@ export default {
     ButtonRepo,
     BaseButton,
     RecipeCardVue
+  },
+  setup(){
+
+    const options = [
+      {
+        id: 1,
+        name: 'Arroz e feijão, purê de batata, carne grelhada',
+        tags: ['meat', 'homemade']
+      },
+      {
+        id: 2,
+        name: 'Salada com frango grelhado',
+        tags: ['chicked', 'homemade', 'salad']
+      },
+      {
+        id: 3,
+        name: 'Macarrão a bolonhesa',
+        tags: ['carbs', 'meat', 'homemade']
+      }
+    ];
+
+    return {
+      options
+    }
+
+
   }
 }
 
@@ -35,7 +61,11 @@ export default {
         </div>
         <ButtonRepo />
       </div>
-      <recipe-card-vue name="Some recipe" />
+    </div>
+    <div class="flex flex-col gap-3">
+      <recipe-card-vue
+        v-for="recipe in options" :key="recipe.id"
+       :name="recipe.name" :id="recipe.id" :tags="recipe.tags" />
     </div>
   </div>
 </template>

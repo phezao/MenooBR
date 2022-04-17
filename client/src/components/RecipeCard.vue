@@ -6,8 +6,12 @@
     </div>
     <div class="body">
       <div class="tags flex gap-1">
-        <span class="px-4 py-1 text-sm leading-3 tracking-tight bg-green-400 rounded-full text-white">Vegan</span>
-        <span class="px-4 py-1 text-sm leading-3 tracking-tight bg-red-500 rounded-full text-white">Meat</span>
+        <span
+          v-for="tag in tags" :key="tag"
+          class="border border-indigo-600 font-medium px-4 py-1 text-sm leading-3 tracking-tight rounded-full text-indigo-600"
+        >
+          {{ tag }}
+        </span>
       </div>
     </div>
   </div>
