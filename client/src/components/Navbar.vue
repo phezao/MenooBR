@@ -10,9 +10,11 @@
         <div class="w-1/2 md:flex hidden" >
           <button class="btn btn-ghost">Recipes</button>
           <button class="btn btn-ghost">Menu</button>
-          <button class="btn btn-indigo">
-            <router-link to="/about">Add Recipe</router-link>
-          </button>
+          <router-link to="/about" class="w-full">
+            <button class="btn btn-indigo">
+              Add recipe
+            </button>
+          </router-link>
         </div>
         <Menu as="div" class="relative inline-block text-left md:hidden">
           <div>
@@ -87,7 +89,7 @@
 </template>
 
 <script>
-  import { defineComponent, ref } from "vue"
+  import { defineComponent } from "vue"
   import BaseButtonVue from "./BaseButton.vue";
   import { RouterLink } from "vue-router";
   import { MenuAlt3Icon } from "@heroicons/vue/solid";

@@ -1,15 +1,13 @@
 <script>
 import ButtonRepo from '@/components/ButtonRepo.vue'
-import BaseInput from '@/components/BaseInput.vue';
 import BaseButton from '@/components/BaseButton.vue';
-import BaseSelect from '@/components/BaseSelect.vue';
+import RecipeCardVue from '@/components/RecipeCard.vue';
 
 export default {
   components: {
     ButtonRepo,
-    BaseInput,
     BaseButton,
-    BaseSelect,
+    RecipeCardVue
   }
 }
 
@@ -37,9 +35,7 @@ export default {
         </div>
         <ButtonRepo />
       </div>
+      <recipe-card-vue name="Some recipe" />
     </div>
-    <base-input label="E-mail" />
-    <base-button label="Submit" />
-    <base-select />
   </div>
 </template>
