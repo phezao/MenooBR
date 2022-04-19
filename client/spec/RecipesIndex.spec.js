@@ -1,3 +1,5 @@
+import Home from '../src/views/Home';
+
 describe('RecipesIndexPage', () => {
   test('Render RecipesIndex with recipeList has all recipes', () => {
     expect(true).toBe(true);
