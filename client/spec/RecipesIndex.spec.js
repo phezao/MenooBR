@@ -1,8 +1,10 @@
 import Home from '../src/views/Home';
+import { mount } from '@vue/test-utils';
 
 describe('RecipesIndexPage', () => {
   test('Render RecipesIndex with recipeList has all recipes', () => {
-    expect(true).toBe(true);
+    const wrapper = mount(Home);
+    expect(wrapper.findAll('[data-test="recipeCard"]')).toHaveLength(3)
   });
 
   test('Render RecipesIndex without recipeList has empty state and call to action', () => {
