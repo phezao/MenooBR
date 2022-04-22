@@ -1,7 +1,9 @@
 <template>
-  <div class="flex flex-col justify-between min-h-full">
+  <div class="flex flex-col min-h-full">
     <navbar-vue />
-    <slot />
+    <div class="grow">
+      <slot />
+    </div>
     <footer-vue/>
   </div>
 </template>

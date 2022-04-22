@@ -14,9 +14,7 @@ export default defineComponent({
 
 <template>
   <page-wrapper>
-    <main>
-      <router-view />
-    </main>
+    <router-view />
   </page-wrapper>
 </template>
 

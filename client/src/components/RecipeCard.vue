@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow px-4 py-6 rounded-md w-96">
+  <div class="shadow px-4 py-6 rounded-md max-w-sm">
     <div class="header-title flex justify-between mb-2">
       <h4 class="font-semibold">{{ name }}</h4>
       <button class="text-base leading-6 font-semibold btn-ghost">View</button>
