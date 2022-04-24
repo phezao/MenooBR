@@ -1,11 +1,9 @@
 <template>
   <n-auto-complete
     v-model:value="value"
-    :input-props="{
-      autocomplete: 'disabled'
-    }"
     :options="options"
     placeholder="Search"
+    :on-update:value="$emit('searchEvent', value)"
   />
 </template>
 
@@ -17,19 +15,21 @@ export default defineComponent({
   components: {
     NAutoComplete
   },
-  setup() {
+  props: {
+    options: {
+      type: Array
+    }
+  },
+  setup(props) {
     const valueRef = ref("");
+
+    const options = computed(() => {
+      return props.options.filter(option => option.label.toLowerCase().includes(valueRef.value.toLowerCase()));
+    });
+
     return {
       value: valueRef,
-      options: computed(() => {
-        return ["@gmail.com", "@163.com", "@qq.com"].map((suffix) => {
-          const prefix = valueRef.value.split("@")[0];
-          return {
-            label: prefix + suffix,
-            value: prefix + suffix
-          };
-        });
-      })
+      options,
     };
   }
 });

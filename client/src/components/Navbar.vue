@@ -16,7 +16,7 @@
             </button>
           </router-link>
         </div>
-        <Menu as="div" class="relative inline-block text-left md:hidden">
+        <Menu as="div" class="relative inline-block text-left md:hidden z-10">
           <div>
             <MenuButton
               class="justify-center w-full px-4 py-2 font-medium rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
