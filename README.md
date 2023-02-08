@@ -1,24 +1,20 @@
-# README
+# MenooBR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is to help myself on autogenerating a menu for all the meals I should cook for the week.
 
-Things you may want to cover:
 
-* Ruby version
+Features
+Add my own recipes (and ingredients)
+Generate a menu (Lunch and Dinner) for each day of the week (weekdays only)
+Edit the menu (change a suggestion meal for another)
+Generate a list of shopping items (ingredients) to buy
+Send the menu and shopping items through Slack to myself
 
-* System dependencies
+Feature
+Scenario
 
-* Configuration
+Given
+When
+Then
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
