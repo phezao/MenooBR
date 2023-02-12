@@ -233,6 +233,9 @@ GEM
     semantic_range (3.0.0)
     shoulda-matchers (5.3.0)
       activesupport (>= 5.2.0)
+    simple_form (5.2.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     solargraph (0.48.0)
       backport (~> 1.2)
       benchmark
@@ -305,6 +308,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (>= 6)
   shoulda-matchers (~> 5.0)
+  simple_form
   solargraph
   spring
   turbolinks (~> 5)
