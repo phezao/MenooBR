@@ -1,6 +1,9 @@
 FactoryBot.define do
   factory :recipe do
-    title { "MyString" }
-    notes { "MyString" }
+    title { Faker::Food.unique.dish }
+    notes { Faker::Food.description }
+    after :create do |recipe|
+      create_list :ingredient, 5, recipes: [recipe]
+    end
   end
 end
