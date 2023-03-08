@@ -6,5 +6,9 @@ Rails.application.routes.draw do
         get 'import'
       end
     end
+    resources :menu, only: [:show, :index] do
+      get 'shopping_list', on: :member
+      get 'generate', on: :collection
+    end
   end
 end
